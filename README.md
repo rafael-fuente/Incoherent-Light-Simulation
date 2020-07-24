@@ -11,4 +11,4 @@ Then, the simulation is represented and animated with matplotlib.
 python simulation_femtoseconds.py
 ```
 
-![animation](/images/sim1.gif)
+![animation](/images/femtoseconds_sim.gif)
