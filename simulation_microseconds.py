@@ -29,15 +29,8 @@ def random_sources_in_disk(size, power, wavelength_mean, bandwidth,  r):
 
 N =30 # number of point sources
 
-#coherence time : 1/ ((3*1e8)/(650 * nm) - (3*1e8)/(651 * nm)) = 1.4𝑒−12
-
 
 sim = Source_system( random_sources_in_disk(N,power = 1, wavelength_mean = 650 * nm , bandwidth = 1.0 * nm, r = 2.0* um  ))
-
-#complex average makes convergence faster.
-#sim.visualize_field_in_xy_plane(grid_divisions = 150, rang = [-10* um,10* um,-10* um,10* um], vmin = 0, vmax = np.sqrt(N/( (5*um)**2)) ,  timescale = 1e-8, lengthscale = um, time_average_size = 100, number_of_samples = 1000)
-#sim.visualize_field_in_xy_plane(grid_divisions = 150, rang = [-10* um,10* um,-10* um,10* um], vmin = 0, vmax = np.sqrt(N/( (5*um)**2)) ,  timescale = 1e-10, lengthscale = um, time_average_size = 100, number_of_samples = 1000)
-
 
 sim.visualize_field_in_xy_plane(grid_divisions = 150
                                         , rang = [-10* um,10* um,-10* um,10* um],  # grid  size
