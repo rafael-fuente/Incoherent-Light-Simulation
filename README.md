@@ -6,3 +6,9 @@ This simulator works computing the field created by point sources with random ph
 Time averaging is done using Monte Carlo integration. 
 
 Then, the simulation is represented and animated with matplotlib.
+
+```
+python simulation_femtoseconds.py
+```
+
+![animation](/images/femtoseconds_sim.gif)
