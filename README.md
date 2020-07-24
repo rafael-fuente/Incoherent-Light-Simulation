@@ -7,6 +7,11 @@ Time averaging is done using Monte Carlo integration.
 
 Then, the simulation is represented and animated with matplotlib.
 
+## Requeriments
+
+1. numpy
+2. matplotlib
+3. progressbar
 
 See the examples:
 
