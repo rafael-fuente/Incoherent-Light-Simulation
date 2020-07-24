@@ -7,8 +7,15 @@ Time averaging is done using Monte Carlo integration.
 
 Then, the simulation is represented and animated with matplotlib.
 
+
+See the examples:
+
 ```
 python simulation_femtoseconds.py
+```
+
+```
+python simulation_picoseconds.py
 ```
 
 ![animation](/images/femtoseconds_sim.gif)
