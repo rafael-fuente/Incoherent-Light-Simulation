@@ -27,3 +27,14 @@ python simulation_picoseconds.py
 ```
 
 ![animation](/images/picoseconds_sim.gif)
+
+
+```
+python simulation_miliseconds.py
+```
+
+![animation](/images/miliseconds_sim.gif)
+
+
+Check my youtube video for further explanation:
+
