@@ -14,8 +14,11 @@ See the examples:
 python simulation_femtoseconds.py
 ```
 
+![animation](/images/femtoseconds_sim.gif)
+
+
 ```
 python simulation_picoseconds.py
 ```
 
-![animation](/images/femtoseconds_sim.gif)
+![animation](/images/picoseconds_sim.gif)
