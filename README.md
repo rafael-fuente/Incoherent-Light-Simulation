@@ -38,3 +38,5 @@ python simulation_miliseconds.py
 
 Check my youtube video for further explanation:
 
+https://www.youtube.com/watch?v=ySte6NRuA-k
+
