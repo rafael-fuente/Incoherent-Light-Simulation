@@ -7,6 +7,10 @@ Time averaging is done using Monte Carlo integration.
 
 Then, the simulation is represented and animated with matplotlib.
 
+Check my youtube video for further explanation:
+https://www.youtube.com/watch?v=ySte6NRuA-k
+
+
 ## Requeriments
 
 1. numpy
@@ -36,7 +40,4 @@ python simulation_miliseconds.py
 ![animation](/images/miliseconds_sim.gif)
 
 
-Check my youtube video for further explanation:
-
-https://www.youtube.com/watch?v=ySte6NRuA-k
 
