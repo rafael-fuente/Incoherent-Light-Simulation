@@ -37,7 +37,7 @@ sim = Source_system( random_sources_in_disk(N,power = 1, wavelength_mean = 650 *
 sim.dynamic_visualize_field_in_xy_plane(grid_divisions = 150
                                         , rang = [-7* um,7* um,-7* um,7* um],  # grid  size
                                         vmin = 0, vmax = np.sqrt(N/( (3*um)**2)),  # matplotlib imshow parameter:  data range that the colormap covers
-                                        number_of_samples = 1, 
+                                        number_of_samples = 10, 
                                         max_time = 5, timescale = 1e-12, # order of magnitude of the simulation time  
                                         lengthscale = um,  # order of magnitude of the grid
                                         complex_average = True # makes convergence of the integration faster
