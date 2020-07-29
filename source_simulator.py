@@ -72,11 +72,11 @@ class Source_system:
             for j in range(number_of_samples):
 
 
-                r_sample =  vec3(r.x + 0.*(np.random.rand(grid_divisions, grid_divisions))* (rang[1]-rang[0])  /(grid_divisions),
-                                 r.y + 0.*(np.random.rand(grid_divisions, grid_divisions))* (rang[3]-rang[2])  /(grid_divisions)  ,  0.)
+                r_sample =  vec3(r.x + 1.*(np.random.rand(grid_divisions, grid_divisions))* (rang[1]-rang[0])  /(grid_divisions),
+                                 r.y + 1.*(np.random.rand(grid_divisions, grid_divisions))* (rang[3]-rang[2])  /(grid_divisions)  ,  0.)
                 E_sample = 0.
 
-                t_sample = t +  0*time_average_size   * np.random.rand(1)
+                t_sample = t +  1*time_average_size   * np.random.rand(1)
 
                 for source in self.source_list:
 
