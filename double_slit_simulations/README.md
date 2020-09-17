@@ -1,4 +1,4 @@
-# Incoherent-Light-Simulation
+# Double Slit Simulations with Coherent and Incoherent Light
 
 These are finite-difference time-domain(FDTD) simulations of the double slit experiment with coherent light, incoherent light and partially incoherent light.
 
