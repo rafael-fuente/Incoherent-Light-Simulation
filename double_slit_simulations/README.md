@@ -31,14 +31,14 @@ To perform the simulations, just run from the command prompt the corresponding P
 python simulation_coherent_femtoseconds.py
 ```
 
-![animation](/double_slit_simulations/images/coherent_femtoseconds.gif)
+![animation](/double_slit_simulations/images/gaussian_femtoseconds.gif)
 
 
 ```
 python simulation_coherent_picoseconds.py
 ```
 
-![animation](/double_slit_simulations/images/coherent_picoseconds.gif)
+![animation](/double_slit_simulations/images/gaussian_picoseconds.gif)
 
 
 ```
@@ -55,14 +55,14 @@ python simulation_incoherent_picoseconds.py
 ![animation](/double_slit_simulations/images/incoherent_picoseconds.gif)
 
 ```
-python simulation_partial_incoherent_femtoseconds.py
+python simulation_partially_incoherent_femtoseconds.py
 ```
 
 ![animation](/double_slit_simulations/images/partially_coherent_femtoseconds.gif)
 
 
 ```
-python simulation_partial_incoherent_picoseconds.py
+python simulation_partially_incoherent_picoseconds.py
 ```
 
 ![animation](/double_slit_simulations/images/partially_coherent_picoseconds.gif)
