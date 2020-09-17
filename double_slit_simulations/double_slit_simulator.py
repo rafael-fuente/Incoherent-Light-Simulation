@@ -4,9 +4,9 @@ import os
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
+from light_sources import *
 
-
-
+#create and run the simulation. All lengths are measured in micrometers (μm)
 def double_slit_simulation(light_source, 
                            rang,
                            aperture_width,
@@ -24,25 +24,28 @@ def double_slit_simulation(light_source,
     
     center=mp.Vector3((rang[1]+ rang[0])/2,   (rang[2]+ rang[3])/2)
     cell = mp.Vector3(rang[1]- rang[0] ,rang[2]- rang[3],0)
+    
+    #simulation boundary (PML = perfectly matched absorbing layers)
     pml_layers = [mp.PML(1)]
 
-
+    #light sources
     sources = light_source.get_meep_sources(center)
 
 
     block_length = ((rang[2]- rang[3]) - 2*aperture_width - aperture_separation)/2
 
+    # create the double slit geometry
     geometry = [mp.Block(mp.Vector3(aperture_depth, block_length, mp.inf),
                          center=mp.Vector3(aperture_distance- center.x, rang[2]  - block_length / 2.  ,0),
-                         material=mp.Medium(epsilon=1200)),
+                         material=mp.Medium(epsilon=9999)),
 
                 mp.Block(mp.Vector3(aperture_depth, block_length, mp.inf),
                           center=mp.Vector3(aperture_distance- center.x, rang[3]  + block_length / 2.  ,0),
-                          material=mp.Medium(epsilon=1200)),
+                          material=mp.Medium(epsilon=9999)),
 
                 mp.Block(mp.Vector3(aperture_depth, aperture_separation, mp.inf),
                           center=mp.Vector3(aperture_distance- center.x,0  ,0),
-                          material=mp.Medium(epsilon=1200)),         
+                          material=mp.Medium(epsilon=9999)),         
 
                ]
 
@@ -64,7 +67,7 @@ def double_slit_simulation(light_source,
 
     with h5py.File(simulation_name, 'a') as f:
         
-        
+        #run simulation and store it in a hdf5 file.
         sim.run(until=  femtoseconds_per_frame *  3. / 10 )
         ez_data = sim.get_array(center=mp.Vector3(), size=cell, component=mp.Ez)
         eps_data = sim.get_array(center=mp.Vector3(0,0,0), size=cell, component=mp.Dielectric)    
@@ -95,7 +98,7 @@ def double_slit_simulation(light_source,
         f['max_Ez_value'] = np.amax(absEz)
         
         
-        
+        # frame loop
         for i in range(1,number_of_frames):
             print(i)
             sim.run(until=  femtoseconds_per_frame *  3. / 10 )
@@ -117,7 +120,7 @@ def double_slit_simulation(light_source,
 
 
             
-    
+# visualize simulation with matplotlib. It uses a slider to change the time
 def visualize(simulation_name, color_saturation_factor):
     with h5py.File(simulation_name, 'a') as f:
         
@@ -136,11 +139,11 @@ def visualize(simulation_name, color_saturation_factor):
         Ez_data = f['Ez'][0][:]
         eps_data = f['eps_data'][:]
 
-        #double slit
+        # plot the double slit
         ax.imshow(eps_data.transpose(), interpolation='spline36', cmap='bone', alpha=1, extent = rang)
 
-        #field
-        im = ax.imshow(np.abs(Ez_data.T), interpolation='spline36', cmap='inferno', alpha=0.9, extent = rang, vmax = vmax*color_saturation_factor)
+        # plot the field
+        im = ax.imshow(np.abs(Ez_data.T), interpolation='spline36', cmap='inferno', alpha=0.9, extent = rang, vmax = max_Ez_value*color_saturation_factor)
         ax.set_xlabel('Y [μm]')
         ax.set_ylabel('X [μm]')
 
@@ -153,11 +156,11 @@ def visualize(simulation_name, color_saturation_factor):
             Ez_data = f['Ez'][index][:]
             eps_data = f['eps_data'][:]
 
-            #dielectric
+            # plot the double slit
             ax.imshow(eps_data.transpose(), interpolation='spline36', cmap='bone', alpha=1, extent = rang)
 
-            #field
-            im = ax.imshow(np.abs(Ez_data.T), interpolation='spline36', cmap='inferno', alpha=0.9, extent = rang, vmax = vmax*color_saturation_factor)
+            # plot the field
+            im = ax.imshow(np.abs(Ez_data.T), interpolation='spline36', cmap='inferno', alpha=0.9, extent = rang, vmax = max_Ez_value*color_saturation_factor)
             ax.set_xlabel('Y [μm]')
             ax.set_ylabel('X [μm]')
 
