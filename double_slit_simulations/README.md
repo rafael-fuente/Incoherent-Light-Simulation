@@ -1,6 +1,6 @@
 # Double Slit Simulations with Coherent and Incoherent Light
 
-These are finite-difference time-domain(FDTD) simulations of the double slit experiment with coherent light, incoherent light and partially incoherent light.
+These are finite-difference time-domain(FDTD) simulations of the double slit experiment with coherent light, incoherent light and partially coherent light.
 
 The simulations are performed at three different time scales: femtoseconds, picoseconds and microseconds to show the differences between them.
 
@@ -28,6 +28,20 @@ To install meep follow the guide of the official page: https://meep.readthedocs.
 To perform the simulations, just run from the command prompt the corresponding Python scripts:
 
 ```
+python simulation_coherent_femtoseconds.py
+```
+
+![animation](/double_slit_simulations/images/coherent_femtoseconds.gif)
+
+
+```
+python simulation_coherent_picoseconds.py
+```
+
+![animation](/double_slit_simulations/images/coherent_picoseconds.gif)
+
+
+```
 python simulation_incoherent_femtoseconds.py
 ```
 
@@ -44,14 +58,14 @@ python simulation_incoherent_picoseconds.py
 python simulation_partial_incoherent_femtoseconds.py
 ```
 
-![animation](/double_slit_simulations/images/partial_incoherent_femtoseconds.gif)
+![animation](/double_slit_simulations/images/partially_coherent_femtoseconds.gif)
 
 
 ```
 python simulation_partial_incoherent_picoseconds.py
 ```
 
-![animation](/double_slit_simulations/images/partial_incoherent_picoseconds.gif)
+![animation](/double_slit_simulations/images/partially_coherent_picoseconds.gif)
 
 
 
