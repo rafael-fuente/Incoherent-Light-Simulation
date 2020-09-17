@@ -11,13 +11,18 @@ Check my youtube video for further explanation:
 https://www.youtube.com/watch?v=ySte6NRuA-k
 
 
-## Requeriments
+## Installation
+
+Just clone or download this repo.
+The package requeriments are:
 
 1. numpy
 2. matplotlib
 3. progressbar
 
-See the examples:
+## Simulations
+
+To perform the simulations, just run from the command prompt the corresponding Python scripts:
 
 ```
 python simulation_femtoseconds.py
