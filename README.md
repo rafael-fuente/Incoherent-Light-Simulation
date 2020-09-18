@@ -28,21 +28,21 @@ To perform the simulations, just run from the command prompt the corresponding P
 python simulation_femtoseconds.py
 ```
 
-![animation](/images/femtoseconds_sim.gif)
+[![animation](/images/femtoseconds_sim.gif)](/simulation_femtoseconds.py)
 
 
 ```
 python simulation_picoseconds.py
 ```
 
-![animation](/images/picoseconds_sim.gif)
+[![animation](/images/picoseconds_sim.gif)](/simulation_picoseconds.py)
 
 
 ```
 python simulation_miliseconds.py
 ```
 
-![animation](/images/miliseconds_sim.gif)
+[![animation](/images/miliseconds_sim.gif)](/simulation_miliseconds.py)
 
 
 
