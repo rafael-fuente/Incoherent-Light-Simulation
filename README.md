@@ -39,10 +39,10 @@ python simulation_picoseconds.py
 
 
 ```
-python simulation_miliseconds.py
+python simulation_microseconds.py
 ```
 
-[![animation](/images/miliseconds_sim.gif)](/simulation_miliseconds.py)
+[![animation](/images/microseconds_sim.gif)](/simulation_microseconds.py)
 
 
 
