@@ -45,4 +45,5 @@ python simulation_microseconds.py
 [![animation](/images/microseconds_sim.gif)](/simulation_microseconds.py)
 
 
+Also take a look at the [simulations of the double slit experiment with incoherent and coherent light](/double_slit_simulations)
 

@@ -69,3 +69,4 @@ python simulation_partially_incoherent_picoseconds.py
 
 
 
+For the microseconds simulations, you need to run the simulation at least with 10000 samples and averaging them to get a denoised image. This task could take several hours in a personal computer. The smartest approach is taking a sample each time interval equal to the coherence time of the source: λ * λ / (c * Δλ). This is because it is the minimum time to make the electric field change considerably.
