@@ -1,13 +1,13 @@
 # Double Slit Simulations with Coherent and Incoherent Light
 
-These are finite-difference time-domain(FDTD) simulations of the double slit experiment with coherent light, incoherent light and partially coherent light.
+These are finite-difference time-domain (FDTD) simulations of the double slit experiment with coherent light, incoherent light and partially coherent light.
 
 The simulations are performed at three different time scales: femtoseconds, picoseconds and microseconds to show the differences between them.
 
 The simulations use the [open source FDTD meep simulator](https://meep.readthedocs.io/en/latest/)
 
-The simulation is stored in [HDF5](https://www.h5py.org/) file format which is very good to store large amounts of data.
-Then, the simulation is represented and animated with matplotlib.
+The simulations are stored in [HDF5](https://www.h5py.org/) file format which is very good to store large amounts of data.
+Then, the simulation are represented and animated with matplotlib.
 
 
 ## Installation

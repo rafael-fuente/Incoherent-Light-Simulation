@@ -35,7 +35,7 @@ class Gaussian_source(Light_source):
         return source_list
 
 
-class Incoherent_source(Light_source):
+class Incoherent_rectangular_source(Light_source):
     def __init__(self, number_of_dipoles, position,
                 λ, bandwidth, width, height):
         
