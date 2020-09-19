@@ -3,10 +3,10 @@ from double_slit_simulator import *
 from visualization import *
 
 
-double_slit_simulation(light_source = Incoherent_source(number_of_dipoles = 10000, 
-                                                        position = mp.Vector3(1,0,0),
-                                                        λ=0.65 , bandwidth=0.01, 
-                                                        width = 2, height = 10),
+double_slit_simulation(light_source = Incoherent_rectangular_source(number_of_dipoles = 10000, 
+                                                                    position = mp.Vector3(1,0,0),
+                                                                    λ=0.65 , bandwidth=0.01, 
+                                                                    width = 2, height = 10),
                        extent = [0,60 , 15, -15],
                        aperture_width = 2.,
                        aperture_depth = 0.5,
