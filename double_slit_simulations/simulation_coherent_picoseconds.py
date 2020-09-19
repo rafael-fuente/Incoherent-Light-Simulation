@@ -15,7 +15,7 @@ double_slit_simulation(light_source = Gaussian_source(position = mp.Vector3(1,0,
                        total_femtoseconds = 20000, # 20 picoseconds
                        number_of_frames = 50,
                        complex_average = True,
-                       simulation_name = "simulation_coherent_femtoseconds.h5")
+                       simulation_name = "simulation_coherent_picoseconds.h5")
 
-visualize(simulation_name = "simulation_coherent_femtoseconds.h5",
+visualize(simulation_name = "simulation_coherent_picoseconds.h5",
 		      max_colormap_factor = 1.)

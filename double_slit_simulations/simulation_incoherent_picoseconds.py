@@ -16,7 +16,7 @@ double_slit_simulation(light_source = Incoherent_rectangular_source(number_of_di
                        total_femtoseconds = 20000, #20 picoseconds
                        number_of_frames = 50,
                        complex_average = True,
-                       simulation_name = "simulation_incoherent_femtoseconds.h5")
+                       simulation_name = "simulation_incoherent_picoseconds.h5")
 
-visualize(simulation_name = "simulation_incoherent_femtoseconds.h5",
+visualize(simulation_name = "simulation_incoherent_picoseconds.h5",
 		      max_colormap_factor = 0.5)

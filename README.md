@@ -8,7 +8,7 @@ Time averaging is done using Monte Carlo integration.
 Then, the simulation is represented and animated with matplotlib.
 
 Check my youtube video for further explanation:
-https://www.youtube.com/watch?v=ySte6NRuA-k
+https://www.youtube.com/watch?v=ySte6NRuA-k&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=1
 
 
 ## Installation

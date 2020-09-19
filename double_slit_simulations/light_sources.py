@@ -56,7 +56,7 @@ class Incoherent_rectangular_source(Light_source):
         source_list = [None]*self.number_of_dipoles
 
         for i in range(self.number_of_dipoles):
-            source_list[i] = mp.Source(mp.ContinuousSource(frequency=1/self.λ),
+            source_list[i] = mp.Source(mp.ContinuousSource(frequency=1/self.wavelength[i]),
                              component=mp.Ez,
                              center= self.position - sim_center +  mp.Vector3(self.x0[i], self.y0[i]))
 
