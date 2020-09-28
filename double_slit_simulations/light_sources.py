@@ -23,13 +23,13 @@ class Gaussian_source(Light_source):
     def get_meep_sources(self, sim_center):
 
         def _gaussian_beam(x):
-            return np.exp(1j*2*np.pi* 2*np.pi/self.λ * self.direction.dot(x-self.position+sim_center)  -  (x-self.position+sim_center).dot(x-self.position+sim_center)/(2*self.w0**2))
-
+            return np.exp(1j*2*np.pi/self.λ * self.direction.dot(x)) * np.exp(-  ((mp.Vector3(0,1,0)).dot(x))**2  /(2*self.w0**2))
+                   
         
         source_list = [mp.Source(src=mp.ContinuousSource(1/self.λ),
                          component=mp.Ez,
                          center= self.position - sim_center,
-                         size=mp.Vector3(-self.direction.y,self.direction.x,0)*30,
+                         size=mp.Vector3(0,1,0)*30,
                          amp_func=_gaussian_beam)]
 
         return source_list
