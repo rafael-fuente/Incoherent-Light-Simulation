@@ -9,7 +9,7 @@ The simulations use the [open source FDTD meep simulator](https://meep.readthedo
 The simulations are stored in [HDF5](https://www.h5py.org/) file format which is very good to store large amounts of data.
 Then, the simulation are represented and animated with matplotlib.
 
-Check [my youtube video](https://www.youtube.com/watch?v=5cyzdsd6AOs&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=2) for further explanation of the simulations:
+Check the [article](https://rafael-fuente.github.io/visual-explanation-of-the-van-cittert-zernike-theorem-the-double-slit-experiment-with-incoherent-and-coherent-light.html) and the [youtube video](https://www.youtube.com/watch?v=5cyzdsd6AOs&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=2) for further explanation of the simulations.
 
 
 ## Installation
