@@ -7,8 +7,8 @@ Time averaging is done using Monte Carlo integration.
 
 Then, the simulation is represented and animated with matplotlib.
 
-Check my youtube video for further explanation:
-https://www.youtube.com/watch?v=ySte6NRuA-k&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=1
+Check the [youtube video](https://www.youtube.com/watch?v=ySte6NRuA-k&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=1
+) and the [article](https://rafael-fuente.github.io/visual-explanation-of-the-van-cittert-zernike-theorem-the-double-slit-experiment-with-incoherent-and-coherent-light.html) for further explanation:
 
 
 ## Installation
