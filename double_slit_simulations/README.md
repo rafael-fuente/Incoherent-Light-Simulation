@@ -1,6 +1,6 @@
 # Double Slit Simulations with Coherent and Incoherent Light
 
-These are finite-difference time-domain (FDTD) simulations of the double slit experiment with coherent light, incoherent light and partially coherent light.
+These are finite-difference time-domain (FDTD) simulations of the double slit experiment with coherent light, spatially incoherent light and partially spatially coherent light.
 
 The simulations are performed at three different time scales: femtoseconds, picoseconds and microseconds to show the differences between them.
 
@@ -9,14 +9,12 @@ The simulations use the [open source FDTD meep simulator](https://meep.readthedo
 The simulations are stored in [HDF5](https://www.h5py.org/) file format which is very good to store large amounts of data.
 Then, the simulation are represented and animated with matplotlib.
 
-Check the [article](https://rafael-fuente.github.io/visual-explanation-of-the-van-cittert-zernike-theorem-the-double-slit-experiment-with-incoherent-and-coherent-light.html) and the [youtube video](https://www.youtube.com/watch?v=5cyzdsd6AOs&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=2) for further explanation of the simulations.
+Check the [article](https://rafael-fuente.github.io/visual-explanation-of-the-van-cittert-zernike-theorem-the-double-slit-experiment-with-incoherent-and-coherent-light.html) and the [video](https://www.youtube.com/watch?v=5cyzdsd6AOs&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=2) for further explanation of the simulations.
 
 
 ## Installation
 
-Just clone or download this repo.
-
-The package requeriments are:
+Just clone or download the repository. The package requeriments are:
 
 1. meep
 2. numpy
@@ -72,4 +70,4 @@ python simulation_partially_incoherent_picoseconds.py
 
 The fastest simulations are the femtoseconds, you can complete them in two minutes.
 
-For the microseconds simulations, you need to run the simulation at least with 10000 samples and averaging them to get a denoised image. This task could take several hours in a personal computer. The smartest approach is taking a sample each time interval equal to the coherence time of the source: λ * λ / (c * Δλ). This is because it is the minimum time to make the electric field change considerably.
+For the microseconds simulations, you need to run the simulation at least with 10000 samples and averaging them to get a denoised image. This task could take several hours on a personal computer. The smartest approach is taking a sample each time interval equal to the coherence time of the source: λ * λ / (c * Δλ). This is because it is the minimum time to make the electric field change considerably.
