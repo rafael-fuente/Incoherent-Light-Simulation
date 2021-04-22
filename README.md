@@ -48,6 +48,8 @@ python simulation_microseconds.py
 [![animation](/images/microseconds_sim.gif)](/simulation_microseconds.py)
 
 
-There are more simulations, implemented with a FDTD scheme: 
+There are more simulations, implemented with a FDTD scheme:
+
 [Simulations of the double slit experiment with incoherent and coherent light.](/double_slit_simulations)
+
 They illustrate the concept of spatial coherence further, showing the differences with spatially coherent light and how the visibility of the interferences varies as the distance from the double slit to the light source increases.
