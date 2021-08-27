@@ -1,4 +1,5 @@
 # Incoherent-Light-Simulation
+[![DOI](https://zenodo.org/badge/282254555.svg)](https://zenodo.org/badge/latestdoi/282254555)
 
 This is a research project with the goal of illustrating the concept of spatial coherence in light. 
 The incoherent light propagation is simulated through three different time scales. As the time scales goes up and the field is averaged, the visibility of the interferences disappears, yielding a uniform distribution.
