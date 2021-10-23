@@ -1,19 +1,21 @@
 # Incoherent-Light-Simulation
 [![DOI](https://zenodo.org/badge/282254555.svg)](https://zenodo.org/badge/latestdoi/282254555)
 
-This is a research project with the goal of illustrating the concept of spatial coherence in light. 
-The incoherent light propagation is simulated through three different time scales. As the time scales goes up and the field is averaged, the visibility of the interferences disappears, yielding a uniform distribution.
+This is a project that consists of a compilation of educative optical simulations with the goal of illustrating the concept of spatial coherence.
+
+The simulations focus on visualizing the differences between the behavior of incoherent and coherent light propagation through different time scales: femtoseconds, picoseconds, and microseconds. When the time scale goes up and the field is averaged, the interferometric visibility of the fringes disappears, yielding a uniform distribution.
+
 
 ## How the simulations are done
 
-This simulations works computing the field created by point sources with random phases and randomly placed inside a the light source dimensions.
+These simulations are performed by computing the field created by point sources with random phases and randomly placed inside the light source dimensions.
 
 Time averaging is done using Monte Carlo integration. 
 
 Then, the simulation is represented and animated with matplotlib.
 
 Check the [video](https://www.youtube.com/watch?v=ySte6NRuA-k&list=PLYkZehxPE_IhJDMTJUob1ZbxWhL8AjHDi&index=1
-) and the [article](https://rafael-fuente.github.io/visual-explanation-of-the-van-cittert-zernike-theorem-the-double-slit-experiment-with-incoherent-and-coherent-light.html) for further explanation.
+) for the demonstration and the [article](https://rafael-fuente.github.io/visual-explanation-of-the-van-cittert-zernike-theorem-the-double-slit-experiment-with-incoherent-and-coherent-light.html) for further explanation.
 
 
 ## Installation
@@ -49,8 +51,6 @@ python simulation_microseconds.py
 [![animation](/images/microseconds_sim.gif)](/simulation_microseconds.py)
 
 
-There are more simulations, implemented with a FDTD scheme:
+The double slit experiment finite-difference time-domain (FDTD) simulations reproduce the results of the Van-Cittert-Zernike theorem, showing how the interferometric visibility of the fringes varies due to the different parameters of the simulation.
 
 [Simulations of the double slit experiment with incoherent and coherent light.](/double_slit_simulations)
-
-They illustrate the concept of spatial coherence further, showing the differences with spatially coherent light and how the visibility of the interferences varies as the distance from the double slit to the light source increases.
